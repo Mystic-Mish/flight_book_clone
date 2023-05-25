@@ -1,0 +1,300 @@
+/*general styles that apply to the whole website*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*style for the header section*/
+.header {
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/header-img.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+}
+
+/*style for the row in the header section|*/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    text-align: left;
+    text-align: center;
+}
+
+/*styles for the left side of the header section*/
+.side {
+    flex: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.logo {
+    margin-top: 50px;
+}
+
+.social h3 {
+    font-size: 30px;
+    color: lightgrey;
+}
+
+.link {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link a {
+    color: white;
+}
+
+.link img {
+    width: 50px;
+    height: 50px;
+}
+
+.contact {
+    margin-top: 122px;
+}
+
+.contact button {
+    padding: 10px;
+    border: none;
+    background-color: #FFD700;
+    color: black;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 300px;
+}
+
+/*styles for the right side of the header section*/
+.main {
+    flex: 60%;
+    padding: 20px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    background-color: #00d3d3d3;
+    border-radius: 10px;
+}
+
+.location {
+    display: flex;
+    margin: 10px;
+}
+
+.location select {
+    width: 280px;
+    height: 30px;
+}
+
+.dates {
+    display: flex;
+    margin: 10px;
+}
+
+.dates input {
+    width: 280px;
+    height: 30px;
+}
+
+.how {
+    display: flex;
+    margin: 20px;
+}
+
+.one-way {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.round {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.book button {
+    margin-left: 200px;
+    padding: 10px;
+    border: none;
+    background-color: #FFD700;
+    color: black;
+    border-radius: 5px;
+}
+
+/*styles for the pitch class section*/
+/*Styles for the container class*/
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    background-color: #000080;
+    margin: 8px;
+    color: darkgrey;
+    padding: 30px;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+.card:hover {
+    background-color: #FFD700;
+    color: black;
+}
+
+/*Styles for the most visited places section*/
+.visited h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.container {
+    padding: 0 px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-4 {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.visited .card {
+    background-color: lightgray;
+    margin: 8px;
+    color: black;
+    padding: 20px;
+}
+
+.visited .card img {
+    width: 200px;
+    height: 300px;
+}
+
+/*styling for the footer section*/
+footer {
+    text-align: center;
+    background-color: #000080;
+    padding: 20px;
+}
+
+footer a {
+    background-color: #FFD700;
+    padding: 6px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.social-link img{
+    height: 50px;
+    width: 50px;
+    margin: 30px;
+}
+
+/*Styling for the contact page*/
+header {
+    height: 30vh;
+    overflow: hidden;
+    background-image: url(../img/header-img.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+}
+
+header .logo {
+    margin-left: 70px;
+}
+
+header .contact {
+    margin-top: 50px;
+    margin-left: 800px;
+}
+
+.contactus h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.form {
+    height: 60vh;
+    overflow: hidden;
+    background-image: url(../img/event.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+}
+
+.form h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.input input {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+}
+
+.form textarea {
+    width: 510px;
+    padding: 10px;
+}
+
+.form .contact {
+    margin-top: 3px;
+    margin-bottom: 40px;
+    text-align: center;
+}
